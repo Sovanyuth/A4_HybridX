@@ -3,6 +3,7 @@
 #include "string"
 using namespace std;
 
+// Implementing a pure virtual class as a skeleton for all other car classes. This will need to be override by all other classes
 class Car 
 {
 public:

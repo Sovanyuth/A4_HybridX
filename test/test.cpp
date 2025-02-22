@@ -5,12 +5,15 @@
 #include "electricCar.h"
 #include "hybridCar.h"
 
+// Testcases, verifying implementations.
 TEST_CASE("Main Section", "[ChargeBattery][valid]")
 {
+	// Creating instances using pointers
 	ElectricCar* eCar = new ElectricCar();
 	GasolineCar* gCar = new GasolineCar();
 	HybridCar* hCar = new HybridCar();
 
+	// Testing all the methods to see if they return the expected results.
 	REQUIRE(eCar->ChargeBattery() == "ChargeBattery ElectricCar");
 	REQUIRE(gCar->ChargeBattery() == "GasolineCar Can't Charge Battery");
 	REQUIRE(hCar->ChargeBattery() == "ChargeBattery HybridCar");

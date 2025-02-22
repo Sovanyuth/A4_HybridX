@@ -4,7 +4,7 @@
 #include "string"
 using namespace std;
 
-class ElectricCar : public Car 
+class ElectricCar : virtual public Car 
 {
 public:
 	ElectricCar();
